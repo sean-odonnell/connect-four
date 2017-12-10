@@ -1,0 +1,32 @@
+{
+  "name": "connect-four-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "lodash": "^4.17.4",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.9.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-scripts": "1.0.17",
+    "reactstrap": "^5.0.0-alpha.4",
+    "rmwc": "0.0.1-rc9",
+    "semantic-ui-react": "^0.77.0",
+    "underscore": "^1.8.3",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

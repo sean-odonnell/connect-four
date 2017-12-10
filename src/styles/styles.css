@@ -1,0 +1,80 @@
+.ConnectFour {
+  text-align: center;
+  background-image: url("../images/background.jpg");
+  background-size: cover; }
+
+.arrow {
+  display: inline-block;
+  padding: 45px;
+  font-family: monospace;
+  background-image: url("../images/Red_Arrow_Down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 150px;
+  width: 13.9%;
+  cursor: pointer; }
+
+arrow:hover {
+  background-image: url("../images/Green_Arrow_Down.png"); }
+
+.cell {
+  display: inline-block;
+  padding: 45px;
+  font-family: monospace;
+  background-image: url("../images/empty.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 13.9%;
+  cursor: pointer; }
+
+.cell :hover {
+  background-color: red;
+  opacity: 0.1; }
+
+.green {
+  background-color: green; }
+
+.blue {
+  background-color: blue; }
+
+.red {
+  background-color: red; }
+
+.yellow {
+  background-color: yellow; }
+
+.board {
+  border: solid 10px black; }
+
+.board-inner {
+  margin-left: 15px;
+  margin-right: -15px; }
+
+.Header {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  padding: 10px;
+  opacity: 0.8; }
+
+h1 {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  height: 170px;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 8.0em;
+  text-shadow: -4px -4px 0 grey,
+ 4px -4px 0 grey,
+ -4px 4px 0 grey,
+ 4px 4px 0 grey; }
+
+.header-icon {
+  border-radius: 25px;
+  width: 80px;
+  height: 80px;
+  color: teal; }
